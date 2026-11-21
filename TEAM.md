@@ -4,7 +4,7 @@ Mã bộ ảnh: **G01** · Hình thức: **cá nhân**
 
 | Họ tên | MSSV | Đã gán đủ 22 ảnh? | Review chéo với (peer diff) | Số dòng disagreement đã xử lý |
 |---|---|---|---|---|
-| Đặng Minh Quân | 2A202603171 | có — 22/22 (`--expect 22`, 0 lỗi) | Nguyễn Tuấn Hưng (cùng mã G01, CVAT job 66, tài khoản `HungNguyen` / `hungnn91296@gmail.com`) | 40/40 dòng đã điền verdict + luật + hành động |
+| Đặng Minh Quân | 2A202603171 | có — 22/22 (`--expect 22`, 0 lỗi) | Nguyễn Tuấn Hưng · 2A202603199 (cùng mã G01, CVAT job 66, tài khoản `HungNguyen` / `hungnn91296@gmail.com`) | 40/40 dòng đã điền verdict + luật + hành động |
 
 Ca hai bên vẫn không thống nhất và đã hỏi coach (ghi tên ảnh + đối tượng):
 
