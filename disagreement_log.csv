@@ -1,0 +1,41 @@
+image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,person,seatbelt,khác giá trị (IoU=0.98),worn_correct,not_worn,Tôi đúng,"GC §4.2 + §4.6: seatbelt đọc theo ảnh thật; luật 'chỉ not_worn' áp cho ảnh dựng SVIRO (S##), còn D## là Drive&Act thật",Giữ worn_correct; đã ghi nguồn ảnh trong ir_log.csv
+D01.png,face,gaze_zone,khác giá trị (IoU=0.92),other,road,Giữ nguyên (ca mơ hồ),GC §4.5: gaze_zone chỉ suy được khi thấy rõ hướng mắt; 'other' là giá trị hợp lệ cho ca không xác định (schema không có 'unknown'),Giữ other + nêu lý do; không đổi theo peer vì peer suy từ ngữ cảnh lái chứ không từ mí mắt
+D02.png,face,eye_left,khác giá trị (IoU=0.89),open,unknown,Tôi đúng,GC §4.5 + COMMON_ERRORS: 'unknown' không phải giá trị mặc định; thấy đường mí thì đặt open/closed,Giữ nguyên
+D02.png,face,eye_right,khác giá trị (IoU=0.89),open,unknown,Tôi đúng,GC §4.5 + COMMON_ERRORS: 'unknown' không phải giá trị mặc định; thấy đường mí thì đặt open/closed,Giữ nguyên
+D02.png,face13,left_eye_outer.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D02.png,face13,left_eye_inner.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D02.png,face13,left_eye_upper.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D02.png,face13,left_eye_lower.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D02.png,face13,right_eye_outer.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D02.png,face13,right_eye_inner.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D02.png,face13,right_eye_upper.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D02.png,face13,right_eye_lower.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D02.png,face13,lip_lower.occluded,khác cờ,1,0,Ca mơ hồ,"GC Q1: che một phần thì tuỳ mức che — hai người chọn ngưỡng khác nhau, không có luật số","Giữ nguyên, ghi nhận là ngưỡng riêng"
+D03.png,face,gaze_zone,khác giá trị (IoU=0.88),other,lap,Giữ nguyên (ca mơ hồ),GC §4.5: gaze_zone chỉ suy được khi thấy rõ hướng mắt; 'other' là giá trị hợp lệ cho ca không xác định (schema không có 'unknown'),Giữ other + nêu lý do; không đổi theo peer vì peer suy từ ngữ cảnh lái chứ không từ mí mắt
+D03.png,face13,right_eye_outer.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D03.png,face13,right_eye_outer.outside,khác cờ,1,0,Tôi đúng,"GC Q1: outside = không xác định được vị trí; occluded = biết vị trí nhưng bị che → hai cờ loại trừ nhau, đặt cả hai là sai",Giữ nguyên
+D03.png,face13,right_eye_inner.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D03.png,face13,right_eye_inner.outside,khác cờ,1,0,Tôi đúng,"GC Q1: outside = không xác định được vị trí; occluded = biết vị trí nhưng bị che → hai cờ loại trừ nhau, đặt cả hai là sai",Giữ nguyên
+D03.png,face13,right_eye_upper.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D03.png,face13,right_eye_upper.outside,khác cờ,1,0,Tôi đúng,"GC Q1: outside = không xác định được vị trí; occluded = biết vị trí nhưng bị che → hai cờ loại trừ nhau, đặt cả hai là sai",Giữ nguyên
+D03.png,face13,right_eye_lower.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D03.png,face13,right_eye_lower.outside,khác cờ,1,0,Tôi đúng,"GC Q1: outside = không xác định được vị trí; occluded = biết vị trí nhưng bị che → hai cờ loại trừ nhau, đặt cả hai là sai",Giữ nguyên
+D04.png,face,gaze_zone,khác giá trị (IoU=0.89),other,road,Giữ nguyên (ca mơ hồ),GC §4.5: gaze_zone chỉ suy được khi thấy rõ hướng mắt; 'other' là giá trị hợp lệ cho ca không xác định (schema không có 'unknown'),Giữ other + nêu lý do; không đổi theo peer vì peer suy từ ngữ cảnh lái chứ không từ mí mắt
+D04.png,face,glasses,khác giá trị (IoU=0.89),none,clear,Ca mơ hồ — cần coach,GC §4.5: clear vs none khó phân biệt trên NIR khi kính không phản xạ; nếu không chắc thì nên unknown,Giữ none ở bản nộp này; đã ghi là điểm chưa chắc trong self_review §1
+D04.png,face13,nose_tip.occluded,khác cờ,1,0,Ca mơ hồ,"GC Q1: che một phần thì tuỳ mức che — hai người chọn ngưỡng khác nhau, không có luật số","Giữ nguyên, ghi nhận là ngưỡng riêng"
+D04.png,face13,mouth_left.occluded,khác cờ,1,0,Ca mơ hồ,"GC Q1: che một phần thì tuỳ mức che — hai người chọn ngưỡng khác nhau, không có luật số","Giữ nguyên, ghi nhận là ngưỡng riêng"
+D04.png,face13,mouth_right.outside,khác cờ,1,0,Tôi đúng,"GC Q1: outside = không xác định được vị trí; occluded = biết vị trí nhưng bị che → hai cờ loại trừ nhau, đặt cả hai là sai",Giữ nguyên
+D04.png,face13,lip_upper.occluded,khác cờ,1,0,Ca mơ hồ,"GC Q1: che một phần thì tuỳ mức che — hai người chọn ngưỡng khác nhau, không có luật số","Giữ nguyên, ghi nhận là ngưỡng riêng"
+D04.png,face13,lip_lower.occluded,khác cờ,1,0,Ca mơ hồ,"GC Q1: che một phần thì tuỳ mức che — hai người chọn ngưỡng khác nhau, không có luật số","Giữ nguyên, ghi nhận là ngưỡng riêng"
+D05.png,face,eye_right,khác giá trị (IoU=0.92),open,unknown,Tôi đúng,GC §4.5 + COMMON_ERRORS: 'unknown' không phải giá trị mặc định; thấy đường mí thì đặt open/closed,Giữ nguyên
+D05.png,face,gaze_zone,khác giá trị (IoU=0.92),other,road,Giữ nguyên (ca mơ hồ),GC §4.5: gaze_zone chỉ suy được khi thấy rõ hướng mắt; 'other' là giá trị hợp lệ cho ca không xác định (schema không có 'unknown'),Giữ other + nêu lý do; không đổi theo peer vì peer suy từ ngữ cảnh lái chứ không từ mí mắt
+D05.png,face13,right_eye_outer.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D05.png,face13,right_eye_inner.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D05.png,face13,right_eye_upper.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D05.png,face13,right_eye_lower.occluded,khác cờ,0,1,Tôi đúng,GC §4.5 + Q1: occluded chỉ dùng khi biết vị trí nhưng bị che; điểm đặt được trên mí thấy rõ thì để 0,Giữ nguyên
+D06.png,face,gaze_zone,khác giá trị (IoU=0.96),other,lap,Giữ nguyên (ca mơ hồ),GC §4.5: gaze_zone chỉ suy được khi thấy rõ hướng mắt; 'other' là giá trị hợp lệ cho ca không xác định (schema không có 'unknown'),Giữ other + nêu lý do; không đổi theo peer vì peer suy từ ngữ cảnh lái chứ không từ mí mắt
+S06_ir.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,Peer đúng,GC §4.2–4.3: object gồm túi/ba lô trong cabin; thiếu box là under-annotation,Ghi nhận thiếu (S06 rear_middle); không kịp bổ sung trong bản nộp này — đã nêu trong self_review §1
+S06_rgb.png,object,box,chỉ có ở peer (hoặc IoU thấp),,,Peer đúng,GC §4.2–4.3: object gồm túi/ba lô trong cabin; thiếu box là under-annotation,Ghi nhận thiếu (S06 rear_middle); không kịp bổ sung trong bản nộp này — đã nêu trong self_review §1
+S08_ir.png,infant_seat,facing,khác giá trị (IoU=0.96),rear,front,Ca mơ hồ — cần coach,GC §4.4: facing theo hướng quay của ghế so với trục xe; ảnh OMS chụp từ hàng trước nên ghế quay về camera là rear,Giữ rear; nêu trong self_review là ca cần coach xác nhận
+S08_rgb.png,infant_seat,facing,khác giá trị (IoU=0.96),rear,front,Ca mơ hồ — cần coach,GC §4.4: facing theo hướng quay của ghế so với trục xe; ảnh OMS chụp từ hàng trước nên ghế quay về camera là rear,Giữ rear; nêu trong self_review là ca cần coach xác nhận

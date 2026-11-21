@@ -1,30 +1,23 @@
-# Exit ticket — Ngày 12
+# Exit ticket — Day 12
 
-Làm cá nhân, không mở slide, khoảng 10 phút. Ghi đáp án ngay dưới mỗi câu.
-
-**Họ tên:** … · **Mã:** Gxx
+**Full name:** Đặng Minh Quân · **Code:** G01
 
 ---
 
-**Câu 1 · Chọn một.** Camera DMS trên nhiều xe tự chiếu đèn LED cận hồng ngoại khoảng 940 nm lên mặt tài xế. Lý do chính là gì?
+**Question 1 — choose one.** A DMS camera on many cars projects ~940 nm near-infrared LED light onto the driver's face. What is the main reason?
 
-- A. Để đo nhiệt độ da và phát hiện tài xế bị sốt
-- B. Để có ảnh mặt ổn định cả ngày lẫn đêm mà không làm chói mắt tài xế
-- C. Để có ảnh màu đẹp hơn cho cuộc gọi video
-- D. Để camera nhìn xuyên qua mọi loại kính râm
+Answer: **B** — it produces a stable face image day and night without dazzling the driver. 940 nm sits outside visible light, so the illuminator is invisible to the eye; it is not for skin temperature (A), not for prettier colour video (C), and IR does not pass through every sunglasses lens (D) — dark lenses still block the eye signal.
 
-Đáp án: …
+**Question 2 — number, 2 decimals.** A DMS camera runs at 30 fps. The model estimates head yaw > 30 degrees continuously from frame 240 to frame 314, **counting both frame 240 and frame 314**. For how many seconds is the driver not looking at the road?
 
-**Câu 2 · Số, 2 chữ số thập phân.** Camera DMS chạy 30 khung hình/giây. Model ước lượng yaw của đầu tài xế lớn hơn 30° liên tục từ khung hình số 240 đến khung hình số 314, **tính cả khung 240 và khung 314**. Tài xế không nhìn đường trong bao nhiêu giây?
+Answer: **2.50 s** — frames 240…314 inclusive = 314 − 240 + 1 = 75 frames; 75 / 30 = 2.50 s.
 
-Đáp án: … s
+**Question 3 — choose all correct statements.** Which are true about cabin data compared with exterior camera data?
 
-**Câu 3 · Chọn tất cả đáp án đúng.** Những câu nào đúng về dữ liệu cabin so với dữ liệu camera ngoài xe?
+Answer: **A, B, C**
 
-- A. Không thể làm mờ mặt tài xế như làm mờ mặt người qua đường, vì model DMS cần chính khuôn mặt.
-- B. Ban đêm, ảnh cabin thường là ảnh hồng ngoại đen trắng, nên thuộc tính màu áo không gán được.
-- C. Camera OMS nhìn về phía sau xe, nên ghế ở bên trái ảnh là ghế bên phải của xe.
-- D. Vật trong cabin thường ở xa và nhỏ, nhiều vật trong một ảnh.
-- E. Cảnh cabin cố định nên không cần guideline hay QC riêng.
-
-Đáp án: …
+- A true — a DMS model needs the actual face, so the driver's face cannot be blurred the way a pedestrian's face can.
+- B true — at night the cabin camera is near-infrared and monochrome, so a shirt-colour attribute cannot be annotated.
+- C true — the OMS camera looks toward the rear of the car, so the seat on the left of the picture is the car's right seat.
+- D false — cabin objects are close to the camera (roughly 0.5–1.5 m), not "far and small"; what is true is that many objects share one frame.
+- E false — a fixed cabin scene still needs its own guideline and QC: that is exactly why Guideline Cabin v1.0 exists, and why 22 frames produced 75 boxes to audit.
