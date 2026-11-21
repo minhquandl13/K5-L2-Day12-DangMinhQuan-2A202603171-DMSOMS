@@ -45,7 +45,9 @@ LABELS = {
         "seat": SEATS,
         "seatbelt": ["unknown", "worn_correct", "worn_incorrect", "not_worn"],
     }),
-    "child_seat": ("rectangle", {"seat": SEATS, "occupied": ["unknown", "no"]}),
+    # 2026-11-21: coach announced that `occupied = yes` is missing from the shipped label set and
+    # authorised adding it to the CVAT project + this checker. Local amendment, see prompts.md.
+    "child_seat": ("rectangle", {"seat": SEATS, "occupied": ["unknown", "no", "yes"]}),
     "infant_seat": ("rectangle", {"seat": SEATS, "facing": ["rear", "front"]}),
     "object": ("rectangle", {"seat": SEATS, "type": ["other", "bag", "box", "cup"]}),
     "frame_meta": ("tag", {

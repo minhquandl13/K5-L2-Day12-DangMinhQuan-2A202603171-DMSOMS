@@ -24,7 +24,7 @@ Viết tiếp từ slide 54 bài giảng và Cabin Guideline v1.0 (§4.1–4.8).
 | 1 | `person` (`seat`) | rear_left / rear_middle / rear_right / front_passenger | Trạng thái có người theo từng ghế — nền tảng của toàn bộ cabin sau. | Có |
 | 2 | `person` (`seatbelt`) | not_worn / unknown *(SVIRO không có ca thắt dây)* | Nhắc thắt dây hàng sau. | Thường không — dây tối, tương phản thấp |
 | 3 | `face` (chỉ box) | — | Xác nhận chỗ ngồi là người lớn chứ không phải hành lý, và ghép mặt với ghế để nhắc dây an toàn. | Có |
-| 4 | `child_seat` | `seat` · `occupied` no / unknown | Có ghế trẻ em và ghế đó trống hay không; phục vụ nhắc "trẻ bị bỏ trong xe" và tắt túi khí. | Có (hình dạng) |
+| 4 | `child_seat` | `seat` · `occupied` no / unknown / **yes** *(coach bổ sung 2026-11-21)* | Có ghế trẻ em và ghế đó trống hay không; phục vụ nhắc "trẻ bị bỏ trong xe" và tắt túi khí. | Có (hình dạng) |
 | 5 | `infant_seat` | `seat` · `facing` rear / front | Phát hiện ghế em bé quay về phía sau — ca quên trẻ nguy hiểm nhất — và tắt túi khí. | Có (hình dạng) |
 | 6 | `object` | `seat` · `type` bag / box / cup / other | Tách đồ đạc khỏi người ngồi để hành lý không bị đếm thành trẻ; đồng thời báo vật không được cố định. | Hình dạng được, `type` hay suy thành `other` |
 | 7 | tag `frame_meta` | modality · light · camera_blocked | Cùng cổng kiểm tra khung như DMS: camera sau bị che hoặc quá tối thì không được báo "cabin trống" sai. | Không áp dụng (tag) |

@@ -83,11 +83,13 @@ Script không có đáp án, nên các lỗi "im lặng" được kiểm trực 
 | Chuỗi đối tượng của `_rgb` và `_ir` cùng cảnh trùng nhau | 8/8 cảnh khớp |
 | Chiều lật ghế (box bên trái ảnh = `rear_right`) | nhất quán trong cả 16 khung OMS |
 | `seatbelt` trên SVIRO chỉ có `not_worn` | 16/16, không có `worn_*` |
+| `occupied = yes` chỉ dùng khi thấy trẻ trong ghế trẻ em | 6 box (S03 ×2, S05 ×4), không dùng cho người lớn ngồi trên băng ghế |
 | Không còn sót `seat = driver` trên box OMS | 0 trường hợp |
-| Không có `occupied = yes` trên `child_seat` | 0 trường hợp |
 | `face13` đủ 13 điểm mỗi skeleton | 6/6 |
 | Mắt trái nằm dưới mắt phải (y lớn hơn) trên ảnh xoay | 6/6 |
 | `face13` chỉ trên D## và chỉ khi mặt ≥ 60 px | đạt (mặt người lái nhỏ nhất 363 px) |
+
+**Bổ sung schema theo thông báo của coach (2026-11-21).** Bản gốc chỉ cho `occupied` = `unknown` / `no`: `GUIDE.md` §3 ("không có `yes`"), §4.8 ("Không dùng `yes`"), checklist §4.9, và `labels_cabin_v1.json` cũng chỉ có hai giá trị. Coach thông báo bộ nhãn thiếu `yes` và cho phép bổ sung vào project CVAT lẫn script kiểm, nên tôi đã: (a) thêm `yes` vào `child_seat.occupied` trong `scripts/cabin_schema.py` và sinh lại `labels_cabin_v1.json` (diff chỉ đúng một dòng, phần còn lại giống bản gốc từng byte); (b) gán `yes` cho 6 box ở S03/S05 nơi thấy trẻ trong ghế, không dùng cho người lớn ngồi trên băng ghế. `GUIDE.md` là tài liệu của coach nên không sửa; sai lệch giữa guideline và bộ nhãn thực tế được ghi lại ở mục này.
 
 ## 7. Vấn đề phát hiện được và hệ quả
 
