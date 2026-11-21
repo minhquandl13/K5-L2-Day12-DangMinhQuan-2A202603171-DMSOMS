@@ -19,7 +19,7 @@
 
 ## 3. Ghi chú về `disagreement_log`
 
-Peer diff đã chạy: `export_final.zip` (CVAT job 41, tài khoản `minhquan`) so với export của bạn cùng mã G01 nhận qua CVAT (job 66). Kết quả **40 điểm khác trên 22 ảnh chung**, cả 40 dòng đã điền `verdict` / `guideline_rule` / `action`.
+Peer diff đã chạy: `export_final.zip` (CVAT job 41, tài khoản `minhquan`) so với export của bạn Nguyễn Tuấn Hưng (cùng mã G01, CVAT job 66, tài khoản `HungNguyen`). Kết quả **40 điểm khác trên 22 ảnh chung**, cả 40 dòng đã điền `verdict` / `guideline_rule` / `action`.
 
 Ba nhóm đáng chú ý:
 

@@ -116,7 +116,7 @@ Khác biệt này quan trọng cho huấn luyện: model chỉ học trên SVIRO
 
 ## 10. Review chéo (E3) — đã chạy
 
-`cabin_check diff export_final.zip <peer export>` giữa export của tôi (CVAT job 41, `minhquan`) và export của bạn cùng mã G01 nhận qua CVAT (job 66): **22 ảnh chung, 40 điểm khác**. Cả 40 dòng trong `disagreement_log.csv` đã điền `verdict` / `guideline_rule` / `action`.
+`cabin_check diff export_final.zip <peer export>` giữa export của tôi (CVAT job 41, `minhquan`) và export của bạn Nguyễn Tuấn Hưng (cùng mã G01, CVAT job 66): **22 ảnh chung, 40 điểm khác**. Cả 40 dòng trong `disagreement_log.csv` đã điền `verdict` / `guideline_rule` / `action`.
 
 Ba nhóm chính:
 
