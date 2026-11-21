@@ -11,3 +11,6 @@ __pycache__/
 *.pyc
 .DS_Store
 .env*
+
+# goi nop LMS: giu trong thu muc lab nhung khong commit chinh no
+K5-L2-DAY12-*.zip
